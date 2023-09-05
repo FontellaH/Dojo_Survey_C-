@@ -14,54 +14,36 @@
 
 <body>
     <h1 style="margin-left: 30px">Submitted Information</h1>
-    <form action="" method="">
-        <table>
-            <tr>
-                <th></th>
-                <th></th>
-            </tr>
 
-            <tr>
-                <td>
-                    <h2>Name:</h2>
-                </td>
-                <td>
-                    <h2>@ViewBag.name</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Dojo Location:</h2>
-                </td>
-                <td>
-                    <!-- Placeholder for dynamic data, display location -->
-                </td>
-                <h2>@ViewBag.location</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Favorite Language:</h2>
-                </td>
-                <td>
-                    <!-- Placeholder for dynamic data, display the language -->
-                </td>
-                <h2>@ViewBag.language</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Comment (optional):</h2>
-                </td>
-                <td>
-                    <!-- Placeholder for the data, display the tex area -->
-                </td>
-                <h2>@ViewBag.textarea</h2>
-                </td>
-            </tr>
-        </table>
-        <input class="button" type="submit" href="google.com" value="Go Back">
-    </form>
+    <h2>Name:</h2>
+
+    <h2>@ViewBag.name</h2>
+
+    <h2>Dojo Location:</h2>
+
+    <!-- Placeholder for dynamic data, display location -->
+
+    <h2>@ViewBag.location</h2>
+
+
+
+    <h2>Favorite Language:</h2>
+
+
+    <!-- Placeholder for dynamic data, display the language -->
+
+    <h2>@ViewBag.language</h2>
+
+
+    <h2>Comment (optional):</h2>
+
+
+    <!-- Placeholder for the data, display the tex area -->
+
+    <h2>@ViewBag.textarea</h2>
+
+    <a href="/" asp-action="DojoForm" asp-controller ="Dojo">Go Back</a>
+
 </body>
 
 </html>

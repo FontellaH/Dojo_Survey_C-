@@ -1,5 +1,6 @@
 
 using Microsoft.AspNetCore.Mvc;// #10 importing route
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 
 
@@ -24,29 +25,16 @@ public class DojoController : Controller
     }
 
 
-    [HttpPost("process")]   // This makes the post for the form
-    public ViewResult Process(string name, string location, string language, string textarea)
-    {
-        ViewBag.name = name;
-        ViewBag.location = location;
-        ViewBag.language = language;
-        ViewBag.textarea = textarea;
+ [HttpPost("process")]   // This makes the post for the form
+public ViewResult Process(string name, string location, string language, string textarea)
+{
+    ViewBag.name = name;
+    ViewBag.location = location;
+    ViewBag.language = language;
+    ViewBag.textarea = textarea;
 
-        
-        return View("DojoResult");
+    return View("DojoResult");
+}
     }
 
-
-     [HttpPost("processAnother")] // Add a different route for the second Process action
-        public ViewResult ProcessAnother(string name, string location, string language, string textarea)
-        {
-            ViewBag.name = name;
-            ViewBag.location = location;
-            ViewBag.language = language;
-            ViewBag.textarea = textarea;
-
-            return View("DojoResult");
-        }
-
-}
 
